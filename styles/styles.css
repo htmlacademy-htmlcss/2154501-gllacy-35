@@ -96,11 +96,33 @@
   opacity: 0.3;
 }
 
+.social-list {
+  list-style-type: none;
+}
+
 .button-telegram {
   width: 24px;
   height: 24px;
   cursor: pointer;
   background-image: url("../images/telegram.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button-vk{
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background-image: url("../images/vk.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button-yt{
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background-image: url("../images/youtube.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
