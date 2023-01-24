@@ -21,3 +21,86 @@
   src: url("../fonts/inter-900.woff2") format("woff2");
   font-display: swap;
 }
+
+.main-navigation-list,
+.navigation-user {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation-link {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #2D3440;
+  border: none;
+  background-color: transparent;
+}
+
+.tel-link {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #2D3440;
+  border: none;
+  background-color: transparent;
+}
+
+.slide-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+  color: #2D3440;
+}
+
+.slide-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #2D3440;
+}
+
+.btn {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #2D3440;
+  border: none;
+  background-color: transparent;
+}
+
+.slide-point-list {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.point-button {
+  width: 12px;
+  height: 12px;
+  background-color: #fcfcfc;
+  border: none;
+  border-radius: 50%;
+}
+
+.no-active-point {
+  opacity: 0.3;
+}
+
+.button-telegram {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background-image: url("../images/telegram.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
