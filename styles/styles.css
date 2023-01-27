@@ -168,33 +168,36 @@
 .item-img {
   border-radius: 50%;
   display: block;
-  margin: 0 auto -100px;
+  margin: 0 auto -117px;
 }
 
 .item-content {
   text-align: center;
+  max-width: 270px;
 }
 
 .item-wrap-content {
   background-color: #ffffff;
-  padding: 100px 20px 20px;
+  padding: 133px 40px 24px;
   border-radius: 8px;
-  max-width: 270px;
 }
 
 .item-basket {
   appearance: none;
   background-color: #FF2F64;
   border-radius: 50%;
-  background-image: url("../images/basket-icon.svg");
+  background-image: url("../images/basket.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   padding: 0;
+  border: none;
 }
 
 .item-info {
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -209,6 +212,7 @@
   line-height: 24px;
   color: #2D3440;
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .item-text {
@@ -220,6 +224,17 @@
   line-height: 22px;
   color: #565C66;
   text-align: center;
+  margin-bottom: 16px;
+}
+
+.item-price {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2D3440;
 }
 
 .index-banner-item {
