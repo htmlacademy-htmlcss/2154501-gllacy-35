@@ -162,6 +162,8 @@
   background-color: #FEAFC3;
 }
 
+
+
 .item-img {
   border-radius: 50%;
   display: block;
@@ -194,4 +196,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.index-banner-item {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.raspberry-free {
+  background-image: url("../raspberry-free.png");
+}
+
+.marshmellow-free {
+  background-image: url("../marshmellow-free.png");
 }
