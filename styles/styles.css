@@ -394,7 +394,7 @@ body {
   grid-auto-flow: row;
   margin-left: 40px;
   margin-right: 40px;
-  padding-bottom: 56px;
+  padding-bottom: 55px;
 }
 
 .index-about-item {
@@ -468,6 +468,7 @@ body {
   align-items: start;
   justify-content: center;
   border: none;
+  margin-bottom: 80px;
 }
 
 .index-new-post {
@@ -542,7 +543,140 @@ body {
   color: #565C66;
   background-color: transparent;
   padding-top: 26px;
-  padding-bottom: 42px;
+  padding-bottom: 44px;
   padding-left: 26px;
   padding-right: 26px;
+}
+
+.news-form {
+  display: flex;
+  gap: 14px;
+  margin-left: 26px;
+  margin-right: 26px;
+
+}
+
+.input-field {
+  border: solid 1px #B9B9B9;
+  border-radius: 4px;
+  padding: 13px 16px;
+  margin-bottom: 28px;
+}
+
+.newsletter-input {
+  /*flex-grow: 1;*/
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #B9B9B9;
+  background-color: transparent;
+  width: 332px;
+}
+
+.index-delivery {
+  margin: 0 auto;
+  padding: 0;
+  width: 1170px;
+  border: none;
+  background-image: url("../images/delivery-fill.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  border-radius: 16px;
+  background-color: #ffffff;
+  transform: scale(-1, 1);
+}
+
+.index-delivery-rotate {
+  transform: scale(-1, 1);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  align-items: start;
+  justify-content: center;
+}
+
+.delivery-title {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: #2D3440;
+  background-color: transparent;
+  margin-bottom: 24px;
+}
+
+.delivery-text {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #565C66;
+  background-color: transparent;
+  width: 371px;
+}
+
+.delivery-wrap {
+  margin: 0;
+  padding: 0;
+  margin-top: 167px;
+  margin-left: 100px;
+}
+
+.delivery-form {
+  background-color: #FCFCFC;
+  border-radius: 8px;
+  margin: 64px;
+  margin-left: 0;
+}
+
+.delivery-form-title {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #565C66;
+  background-color: transparent;
+  width: 380px;
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-right: 80px;
+  margin-bottom: 32px;
+}
+
+.delivery-form-group {
+  border: none;
+  padding-left: 40px;
+}
+
+label {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2D3440;
+  background-color: transparent;
+}
+
+.input-delivery {
+  border: solid 1px #B9B9B9;
+  border-radius: 4px;
+  padding: 13px 16px;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #B9B9B9;
+  background-color: transparent;
 }

@@ -230,8 +230,8 @@
               <h2 class="visually-hidden">Подписка</h2>
               <div class="wrap">
                 <p class="newsletter-text">Подпишитесь на нашу сладкую рассылку и будете всегда в&nbsp;курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-                <form action="https://echo.htmlacademy.ru" method="post">
-                  <input class="input-field" type="email" placeholder="email@example.com" name="email">
+                <form class="news-form" action="https://echo.htmlacademy.ru" method="post">
+                  <input class="input-field newsletter-input" type="email" placeholder="email@example.com" name="email">
                   <button class="btn" type="submit">Отправить</button>
                 </form>
               </div>
@@ -240,21 +240,25 @@
         </div>
 
         <section class="index-delivery">
-          <h2>Доставка любимого мороженого на дом</h2>
-          <p>Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
-          <div class="delivery-form">
-            <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-            <form action="https://echo.htmlacademy.ru/" method="post">
-              <div class="input-field">
-                <label for="data">Дата</label>
-                <input id="data" type="date" name="data" placeholder="01.04.2020">
-                <label for="tel">Телефон</label>
-                <input id="tel" type="number" name="tel" placeholder="+7 800 999-00-00">
-                <label for="adress">Адрес</label>
-                <input id="adress" type="text" name="adress" placeholder="ул. Большая Конюшенная, 19/8">
-              </div>
-              <button class="btn" type="submit">Отправить</button>
-            </form>
+          <div class="index-delivery-rotate">
+            <div class="delivery-wrap">
+              <h2 class="delivery-title">Доставка любимого мороженого на дом</h2>
+              <p class="delivery-text">Хочется полакомиться любимым десертом, но&nbsp;нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+            </div>
+            <div class="delivery-form">
+              <p class="delivery-form-title">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+              <form class="delivery-form-group" action="https://echo.htmlacademy.ru/" method="post">
+                <div class="input-field">
+                  <label for="data">Дата</label>
+                  <input class="input-delivery" id="data" type="date" name="data" placeholder="01.04.2020">
+                  <label for="tel">Телефон</label>
+                  <input class="input-delivery" id="tel" type="number" name="tel" placeholder="+7 800 999-00-00">
+                  <label for="adress">Адрес</label>
+                  <input class="input-delivery" id="adress" type="text" name="adress" placeholder="ул. Большая Конюшенная, 19/8">
+                </div>
+                <button class="btn" type="submit">Отправить</button>
+              </form>
+            </div>
           </div>
         </section>
 
