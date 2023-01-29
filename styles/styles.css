@@ -474,7 +474,7 @@ body {
 .index-new-post {
   margin: 0;
   padding: 0;
-  background-image: url("../images/10-ways-to-serv.png");
+  background-image: url("../images/10-ways-to-serv.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 100% 50%;
@@ -580,22 +580,18 @@ body {
   padding: 0;
   width: 1170px;
   border: none;
-  background-image: url("../images/delivery-fill.png");
+  background-image: url("../images/delivery-fill.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 100% 50%;
   border-radius: 16px;
   background-color: #ffffff;
-  transform: scale(-1, 1);
-}
-
-.index-delivery-rotate {
-  transform: scale(-1, 1);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   align-items: start;
   justify-content: center;
+  margin-bottom: 80px;
 }
 
 .delivery-title {
@@ -678,5 +674,156 @@ label {
   font-size: 16px;
   line-height: 20px;
   color: #B9B9B9;
+  background-color: transparent;
+}
+
+.index-about-us {
+  margin: 0 auto;
+  padding: 0;
+  width: 1106px;
+  border: none;
+  background-image: url("../images/about-us-fill.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  background-color: #B9B9B9;
+  padding-top: 64px;
+  padding-left: 64px;
+  padding-bottom: 64px;
+  margin-bottom: 48px;
+}
+
+.index-about-information {
+  margin: 0;
+  padding: 0;
+  background-color: #FCFCFC;
+  width: 263px;
+  border-radius: 8px;
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 40px;
+}
+
+.about-us-title {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #565C66;
+  background-color: transparent;
+  margin-bottom: 12px;
+}
+
+.about-us-adress {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2D3440;
+  background-color: transparent;
+  margin-bottom: 24px;
+  font-style: normal;
+}
+
+.about-us-time {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #565C66;
+  background-color: transparent;
+  margin-bottom: 32px;
+}
+
+.main-footer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  column-gap: 20px;
+  padding-bottom: 43px;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.social-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 40px;
+  margin-left: 2px;
+}
+
+.social-item {
+  position: relative;
+}
+
+.button-telegram::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/telegram.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 24px;
+  border: solid 2px rgba(252, 252, 252, 0.3);
+}
+
+.button-vk::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/vk.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 24px;
+  border: solid 2px rgba(252, 252, 252, 0.3);
+}
+
+.button-yt::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/youtube.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 24px;
+  border: solid 2px rgba(252, 252, 252, 0.3);
+}
+
+.footer-info {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-left: 50px;
+}
+
+.footer-info-link {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
   background-color: transparent;
 }
