@@ -135,13 +135,13 @@
           <div class="index-banner-wrapper">
             <div class="index-banner-item raspberry-free">
               <h3 class="index-banner-title-mini">Малинка даром!</h3>
-              <p class="index-banner-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-              <a class="btn" href="#">Хочу подарок</a>
+              <p class="index-banner-text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
+              <a class="btn btn-free" href="#">Хочу подарок</a>
             </div>
             <div class="index-banner-item marshmellow-free">
               <h3 class="index-banner-title-mini">Маршмеллоу даром!</h3>
-              <p class="index-banner-text">При покупке 2 кг пломбира добавимв ваш заказ упаковку нежныхзефирок совершенно бесплатно.</p>
-              <a class="btn" href="#">Хочу подарок</a>
+              <p class="index-banner-text">При покупке 2 кг пломбира добавим в&nbsp;ваш заказ упаковку нежных зефирок&nbsp;совершенно бесплатно.</p>
+              <a class="btn btn-free" href="#">Хочу подарок</a>
             </div>
           </div>
         </section>
@@ -228,11 +228,11 @@
           <section class="index-newsletter">
             <div class="newsletter-wrap">
               <h2 class="visually-hidden">Подписка</h2>
-              <div class="wrap">
+              <div class="wrap-newsletter-input">
                 <p class="newsletter-text">Подпишитесь на нашу сладкую рассылку и будете всегда в&nbsp;курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                 <form class="news-form" action="https://echo.htmlacademy.ru" method="post">
                   <input class="input-field newsletter-input" type="email" placeholder="email@example.com" name="email">
-                  <button class="btn" type="submit">Отправить</button>
+                  <button class="btn btn-newsletter" type="submit">Отправить</button>
                 </form>
               </div>
             </div>
@@ -247,15 +247,21 @@
           <div class="delivery-form">
             <p class="delivery-form-title">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
             <form class="delivery-form-group" action="https://echo.htmlacademy.ru/" method="post">
-              <div class="input-field">
-                <label for="data">Дата</label>
-                <input class="input-delivery" id="data" type="date" name="data" placeholder="01.04.2020">
-                <label for="tel">Телефон</label>
-                <input class="input-delivery" id="tel" type="number" name="tel" placeholder="+7 800 999-00-00">
-                <label for="adress">Адрес</label>
-                <input class="input-delivery" id="adress" type="text" name="adress" placeholder="ул. Большая Конюшенная, 19/8">
+              <div class="input-fields-delivery">
+                <p class="input-fields-and-label">
+                  <label class="icon-for-label" for="data">Дата</label>
+                  <input class="input-delivery" id="data" type="text" name="data" placeholder="01.04.2020">
+                </p>
+                <p class="input-fields-and-label">
+                  <label for="tel">Телефон</label>
+                  <input class="input-delivery" id="tel" type="number" name="tel" placeholder="+7 800 999-00-00">
+                </p>
+                <p class="input-fields-and-label adress-input">
+                  <label class="icon-for-label-adress" for="adress">Адрес</label>
+                  <input class="input-delivery" id="adress" type="text" name="adress" placeholder="ул. Большая Конюшенная, 19/8">
+                </p>
               </div>
-              <button class="btn" type="submit">Отправить</button>
+              <button class="btn btn-delivery" type="submit">Отправить</button>
             </form>
           </div>
         </section>
@@ -266,56 +272,55 @@
             <p class="about-us-title">Адрес главного офиса<br>и&nbsp;офлайн-магазина:</p>
             <address class="about-us-adress">наб. реки Карповки,<br>5 лит П, Санкт-Петербург</address>
             <p class="about-us-title">Для заказов по телефону:</p>
-            <a href="tel:+78128121212" class="tel-link">+7 (812) 812-12-12</a>
+            <a href="tel:+78128121212" class="tel-link-about-us">+7 (812) 812-12-12</a>
             <p class="about-us-time">(с 10 до 20 ежедневно)</p>
-            <a class="btn" href="form.html">Форма обратной связи</a>
+            <a class="btn btn-about-us" href="form.html">Форма обратной связи</a>
           </div>
         </section>
-
-        <footer class="main-footer container">
-
-          <ul class="social-list">
-            <li class="social-item">
-              <a class="button-telegram" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Telegram</span>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="button-vk" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Вконтакте</span>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="button-yt" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Youtube</span>
-              </a>
-            </li>
-          </ul>
-
-          <ul class="footer-info">
-            <li class="footer-info-item heart">
-              <a href="#" class="footer-info-link">Для поставщиков</a>
-            </li>
-            <li class="footer-info-item">
-              <a href="#" class="footer-info-link">Наши документы</a>
-            </li>
-            <li class="footer-info-item">
-              <a href="#" class="footer-info-link">О производстве</a>
-            </li>
-            <li class="footer-info-item">
-              <a href="#" class="footer-info-link">Экологические стандарты</a>
-            </li>
-          </ul>
-
-          <div class="footer-copyright">
-            <a class="navigation-link logo" href="index.html">
-              <img src="./images/logo_htmlacademy.svg" width="93" height="27" alt="HTML Academy.">
-            </a>
-            <p>Сделано в <a class="footer-href" href="#">.html academy</a> &copy; 2021</p>
-          </div>
-        </footer>
-
     </main>
+
+    <footer class="main-footer container">
+
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="button-telegram" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Telegram</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="button-vk" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="button-yt" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="footer-info">
+        <li class="footer-info-item">
+          <a href="#" class="footer-info-link heart">Для поставщиков</a>
+        </li>
+        <li class="footer-info-item">
+          <a href="#" class="footer-info-link">Наши документы</a>
+        </li>
+        <li class="footer-info-item">
+          <a href="#" class="footer-info-link">О производстве</a>
+        </li>
+        <li class="footer-info-item">
+          <a href="#" class="footer-info-link">Экологические стандарты</a>
+        </li>
+      </ul>
+
+      <div class="footer-copyright">
+        <a class="navigation-link logo" href="index.html">
+          <img src="./images/logo_htmlacademy.svg" width="93" height="27" alt="HTML Academy.">
+        </a>
+        <p class="footer-made-in">Сделано в <a class="footer-href" href="#">.html academy</a> &copy; 2021</p>
+      </div>
+    </footer>
 
   </body>
 </html>
