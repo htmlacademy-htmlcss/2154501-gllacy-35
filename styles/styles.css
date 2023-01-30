@@ -41,6 +41,8 @@
 }
 
 .navigation-link {
+  margin: 0;
+  padding: 0;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -816,7 +818,7 @@ label {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   column-gap: 20px;
-  padding-bottom: 43px;
+  padding-bottom: 48px;
   width: 1170px;
   margin: 0 auto;
 }
@@ -877,13 +879,16 @@ label {
 
 .footer-info {
   margin: 0 auto;
+  margin-top: -1px;
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5px 24px;
+  grid-template-columns: auto auto;
+  gap: 4px 24px;
   flex-wrap: wrap;
   list-style-type: none;
-  /*margin-left: 50px;*/
+  margin-left: 129px;
+  /*padding-left: 80px;*/
+  /*margin-right: 50px;*/
 }
 
 .footer-info-link {
@@ -898,22 +903,36 @@ label {
   background-color: transparent;
 }
 
+.footer-info-item {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-info-item-second {
+  margin-top: -9px;
+}
+
 .heart {
   position: relative;
   font-weight: 700;
-  margin-left: 32px;
+  /*margin-left: 32px;*/
 }
 
 .heart::before {
   position: absolute;
   content: "";
   left: -24px;
-  top: 0;
+  top: 1px;
   width: 16px;
   height: 16px;
   background-image: url("../images/heart.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.footer-copyright {
+  margin: 2px 0 0 76px;
+  padding: 0;
 }
 
 .footer-made-in {
@@ -926,6 +945,13 @@ label {
   line-height: 16px;
   color: #2D3440;
   background-color: transparent;
+  margin-top: 8px;
+}
+
+.footer-href {
+  color: #2D3440;
+  text-decoration: none;
+  border-bottom: 1px solid #2D3440;
 }
 
 .btn {
