@@ -27,6 +27,7 @@
   width: 1170px;
   display: flex;
   flex-direction: row;
+  padding-top: 24px;
 }
 
 .visually-hidden {
@@ -45,6 +46,8 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  justify-content: center;
+  align-items: center;
 }
 .main-navigation {
   margin: 0;
@@ -53,6 +56,10 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  align-items: baseline;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-top: -5px;
 }
 
 .main-navigation-list {
@@ -84,7 +91,7 @@
 }
 
 .logo {
-  margin: 0 16px 0 0;
+  margin: 0 16.5px 0 0;
   padding: 0;
 }
 
@@ -96,8 +103,8 @@
 .nav-catalog::after {
   position: absolute;
   content: "";
-  left: 80px;
-  top: 10px;
+  left: 85px;
+  top: 11px;
   width: 16px;
   height: 16px;
   background-image: url("../images/catalog-button.svg");
@@ -107,7 +114,7 @@
 
 .nav-delivery-pay {
   margin: 0;
-  padding: 8px 16px 8px 16px;
+  padding: 8px 17px 8px 16px;
 }
 
 .nav-about-us {
@@ -131,6 +138,7 @@
   color: #2D3440;
   border: none;
   background-color: transparent;
+  margin-right: 1px;
 }
 
 .tel-link-about-us {
@@ -1090,6 +1098,11 @@ label {
   padding: 6px 16px;
   gap: 6px;
   cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .user-login {
@@ -1102,9 +1115,16 @@ label {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 6px 16px;
-  gap: 6px;
+  padding: 6px 18px;
+  padding-right: 17px;
+  padding-left: 17px;
+  gap: 7px;
   cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .user-search {
@@ -1122,4 +1142,9 @@ label {
   cursor: pointer;
   width: 32px;
   height: 32px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
 }
