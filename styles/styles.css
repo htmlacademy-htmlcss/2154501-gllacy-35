@@ -28,6 +28,7 @@
   display: flex;
   flex-direction: row;
   padding-top: 24px;
+  margin-bottom: 41px;
 }
 
 .visually-hidden {
@@ -126,7 +127,8 @@
   margin: 0 auto;
   width: 1170px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  margin-bottom: 80px;
 }
 
 .tel-link {
@@ -156,10 +158,12 @@
 
 .slide {
   display: none;
+  flex-direction: row;
+  margin-left: 70px;
 }
 
 .active-slide {
-  display: block;
+  display: flex;
 }
 
 .slide-title {
@@ -200,6 +204,8 @@
   padding: 0;
   text-decoration: none;
   list-style-type: none;
+  display: flex;
+  gap: 8px;
 }
 
 .point-button {
@@ -1147,4 +1153,20 @@ label {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+}
+
+.slide-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 63px;
+}
+
+.after-slider {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-slider {
+  margin: 0;
 }
