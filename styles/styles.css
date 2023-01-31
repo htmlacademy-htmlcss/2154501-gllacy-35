@@ -1020,7 +1020,7 @@ label {
 .footer-href {
   color: #2D3440;
   text-decoration: none;
-  border-bottom: 1px solid #2D3440;
+  border-bottom: 1px solid rgba(148, 114, 128);
 }
 
 .btn {
