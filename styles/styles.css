@@ -297,9 +297,10 @@ body {
 }
 
 .index-popular {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   margin-bottom: 80px;
+  width: 1170px;
 }
 
 .item-img {
@@ -387,7 +388,7 @@ body {
 .index-banner-item {
   margin: 0;
   padding: 0;
-  width: 570px;
+  max-width: 570px;
   background-color: #FF7799;
   background-repeat: no-repeat;
   background-position: right;
@@ -396,6 +397,7 @@ body {
   padding-top: 36px;
   padding-left: 36px;
   padding-bottom: 46px;
+  padding-right: 207px;
 }
 
 .index-banner {
@@ -440,9 +442,9 @@ body {
 
 .index-about{
   margin: 0 auto;
-  padding: 0;
+  /*padding: 0;*/
   background-color: #ffffff;
-  width: 1122px;
+  /*width: 1122px;*/
   border-radius: 16px;
 }
 
@@ -462,7 +464,7 @@ body {
 
 .index-about-wrap {
   margin: 0 auto;
-  padding: 24px 0;
+  padding: 24px;
   width: 1170px;
   background-color: aquamarine;
   background-image: url("../images/vafer.jpg");
@@ -471,6 +473,7 @@ body {
   background-size:cover;
   border-radius: 16px;
   margin-bottom: 80px;
+  box-sizing: border-box;
 }
 
 .index-about-items {
@@ -583,6 +586,7 @@ body {
   padding-left: 32px;
   padding-top: 32px;
   padding-bottom: 14px;
+  padding-right: 200px;
 }
 
 .servicing {
@@ -599,6 +603,7 @@ body {
   width: 303px;
   padding-bottom: 68px;
   padding-left: 32px;
+  padding-right: 200px;
 }
 
 .index-newsletter {
@@ -713,6 +718,7 @@ body {
   padding: 0;
   /*margin-top: 167px;*/
   margin-left: 100px;
+  padding-right: 50px;
 }
 
 .delivery-form {
@@ -821,7 +827,7 @@ label {
 
 .index-about-us {
   margin: 0 auto;
-  padding: 0;
+  padding: 64px;
   width: 1170px;
   box-sizing: border-box;
   border: none;
@@ -830,9 +836,6 @@ label {
   background-repeat: no-repeat;
   border-radius: 16px;
   background-color: #B9B9B9;
-  padding-top: 64px;
-  padding-left: 64px;
-  padding-bottom: 64px;
   margin-bottom: 46px;
 }
 
