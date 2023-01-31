@@ -1196,6 +1196,10 @@ label {
   position: relative;
 }
 
+.circle-yellow {
+  position: relative;
+}
+
 .for-mini-strawberry {
   position: relative;
 }
@@ -1226,6 +1230,18 @@ label {
   height: 312px;
   border-radius: 50%;
   background-color: #9FC8FF;
+}
+
+.circle-yellow::before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  top: calc(50% - 314px/2);
+  left: 0;
+  width: 312px;
+  height: 312px;
+  border-radius: 50%;
+  background-color: #FCDC92;
 }
 
 .for-mini-strawberry::before {
@@ -1276,6 +1292,32 @@ label {
   height: 150px;
   background-color: transparent;
   background-image: url("../images/ice-cream-strawberry-mini.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.for-mini-marsh::before {
+  position: absolute;
+  content: "";
+  top: 183px;
+  left: 368px;
+  width: 100px;
+  height: 150px;
+  background-color: transparent;
+  background-image: url("../images/ice-cream-strawberry-mini.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.for-mini-marsh::after {
+  position: absolute;
+  content: "";
+  top: 183px;
+  left: 509px;
+  width: 100px;
+  height: 150px;
+  background-color: transparent;
+  background-image: url("../images/ice-cream-banana-mini.png");
   background-repeat: no-repeat;
   background-position: center;
 }
