@@ -96,6 +96,14 @@
   padding: 0;
 }
 
+.logo:hover {
+  opacity: 0.6;
+}
+
+.logo:active {
+  opacity: 0.1;
+}
+
 .nav-catalog {
   padding: 8px 38px 8px 16px;
   position: relative;
@@ -615,6 +623,14 @@ body {
   padding-right: 200px;
 }
 
+.servicing:hover {
+  color:#FF2F64;
+}
+
+.servicing:active {
+  opacity: 0.3;
+}
+
 .index-newsletter {
   margin: 0;
   padding: 6px;
@@ -989,6 +1005,14 @@ label {
   background-color: transparent;
 }
 
+.footer-info-link:hover{
+  opacity: 60%;
+ }
+
+ .footer-info-link:active{
+   opacity: 30%;
+ }
+
 .footer-info-item {
   margin: 0;
   padding: 0;
@@ -1038,6 +1062,14 @@ label {
   color: #2D3440;
   text-decoration: none;
   border-bottom: 1px solid rgba(148, 114, 128);
+}
+
+.footer-href:hover {
+  opacity: 0.6;
+}
+
+.footer-href:active {
+  opacity: 0.3;
 }
 
 .btn {
