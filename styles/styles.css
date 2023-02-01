@@ -188,6 +188,7 @@
   color: #2D3440;
   text-align: left;
   margin-bottom: 43px;
+  max-width: 429px;
 }
 
 .slide-point-list {
@@ -399,6 +400,7 @@ body {
   background-color: #FF7799;
   background-repeat: no-repeat;
   background-position: right;
+  background-size: contain;
   border: none;
   border-radius: 16px;
   padding-top: 36px;
@@ -561,7 +563,7 @@ body {
   padding: 0;
   display: grid;
   grid-template-columns: repeat(2, 570px);
-  grid-template-rows: 224px;
+  /*grid-template-rows: 224px;*/
   gap: 30px;
   align-items: start;
   justify-content: center;
@@ -573,7 +575,7 @@ body {
   margin: 0;
   padding: 0;
   background-image: url("../images/10-ways-to-serv.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 100% 50%;
   border-radius: 16px;
@@ -682,7 +684,7 @@ body {
   width: 1170px;
   border: none;
   background-image: url("../images/delivery-fill.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 100% 50%;
   border-radius: 16px;
@@ -722,7 +724,7 @@ body {
 
 .delivery-wrap {
   margin: 0;
-  padding: 0;
+  padding: 100px 0;
   /*margin-top: 167px;*/
   margin-left: 100px;
   padding-right: 50px;
@@ -840,7 +842,7 @@ label {
   box-sizing: border-box;
   border: none;
   background-image: url("../images/about-us-fill.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   border-radius: 16px;
   background-color: #B9B9B9;
@@ -1059,6 +1061,7 @@ label {
   border-radius: 26px;
   text-align: center;
   align-self: baseline;
+  word-break: break-all;
 }
 
 .btn-newsletter {
