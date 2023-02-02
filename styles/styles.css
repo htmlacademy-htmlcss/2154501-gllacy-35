@@ -740,10 +740,10 @@ body {
 
 .delivery-wrap {
   margin: 0;
-  padding: 100px 0;
-  /*margin-top: 167px;*/
+  padding: 100px 50px 100px 100px;
+  /*margin-top: 167px;
   margin-left: 100px;
-  padding-right: 50px;
+  padding-right: 50px;*/
 }
 
 .delivery-form {
@@ -985,10 +985,10 @@ label {
   padding: 0;
   display: grid;
   grid-template-columns: auto auto;
-  gap: 4px 24px;
+  gap: 4px 0;
   flex-wrap: wrap;
   list-style-type: none;
-  margin-left: 129px;
+  margin-left: 105px;
   /*padding-left: 80px;*/
   /*margin-right: 50px;*/
 }
@@ -1003,6 +1003,7 @@ label {
   line-height: 20px;
   color: #2D3440;
   background-color: transparent;
+  margin-left: 24px;
 }
 
 .footer-info-link:hover{
