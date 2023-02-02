@@ -222,36 +222,66 @@
 
 .social-list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  /*gap: 40px;*/
+  margin-left: 4px;
+  margin-top: 2px;
+}
+
+.btn-social {
+  display: block;
+  width: 24px;
+  height: 24px;
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
+  box-sizing: border-box;
+  background-color: rgba(252, 252, 252, 0.01);
+  border-radius: 24px;
+  margin-right: 16px;
+  outline: none;
+}
+
+.btn-social:hover{
+  background-color: #2D3440;
+}
+
+.btn-social:focus{
+  background-color: #2D3440;
+  box-shadow: 0 0 0 2px #2D3440;
+}
+
+.btn-social:active{
+  background-color: #2D3440;
+  opacity: 0.5;
 }
 
 .button-telegram {
-  width: 24px;
-  height: 24px;
   cursor: pointer;
   background-image: url("../images/telegram.svg");
   background-repeat: no-repeat;
   background-position: center;
   color: #fcfcfc;
+  background-size: 106%;
 }
 
 .button-vk{
-  width: 24px;
-  height: 24px;
   cursor: pointer;
   background-image: url("../images/vk.svg");
   background-repeat: no-repeat;
   background-position: center;
   color: #fcfcfc;
+  background-size: 106%;
 }
 
 .button-yt{
-  width: 24px;
-  height: 24px;
   cursor: pointer;
   background-image: url("../images/youtube.svg");
   background-repeat: no-repeat;
   background-position: center;
   color: #fcfcfc;
+  background-size: 106%;
 }
 
 .index-banner-title {
@@ -656,6 +686,12 @@ body {
   border-radius: 16px;
 }
 
+input::placeholder {
+  color: #B9B9B9;
+}
+
+
+
 .wrap-newsletter-input {
   padding: 26px;
 }
@@ -820,6 +856,22 @@ label {
   width: 100%;
 }
 
+.input-delivery {
+  color: #2D3440;
+}
+
+.input-field {
+  color: #2D3440;
+}
+
+input:hover {
+  border: 1px solid #2D3440;
+}
+
+input:hover {
+  border: 2px solid #2D3440;
+}
+
 .input-fields-and-label {
   margin: 0;
   padding: 0;
@@ -930,19 +982,19 @@ label {
   margin: 0 auto;
 }
 
-.social-list {
+/*.social-list {
   margin: 0;
   padding: 0;
   display: flex;
   gap: 40px;
   margin-left: 2px;
-}
+}*/
 
 .social-item {
   position: relative;
 }
 
-.button-telegram::before {
+/*.button-telegram::before {
   position: absolute;
   content: "";
   left: 0;
@@ -982,7 +1034,7 @@ label {
   background-position: center;
   border-radius: 24px;
   border: solid 2px rgba(252, 252, 252, 0.3);
-}
+}*/
 
 .footer-info {
   margin: 0 auto;
@@ -1204,7 +1256,7 @@ label {
 }
 
 .slider-social {
-  margin-right: 26px;
+  margin-right: -16px;
   margin-top: -2px;
 }
 
