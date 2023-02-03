@@ -435,6 +435,7 @@ body {
   margin: 0;
   padding: 0;
   max-width: 570px;
+  min-height: 200px;
   background-color: #FF7799;
   background-repeat: no-repeat;
   background-position: right;
@@ -443,7 +444,7 @@ body {
   border-radius: 16px;
   padding-top: 36px;
   padding-left: 36px;
-  padding-bottom: 46px;
+  padding-bottom: 32px;
   padding-right: 207px;
 }
 
@@ -858,10 +859,12 @@ label {
 
 .input-delivery {
   color: #2D3440;
+  background-color: #ffffff;
 }
 
 .input-field {
   color: #2D3440;
+  background-color: #ffffff;
 }
 
 input:hover {
@@ -1046,6 +1049,7 @@ input:hover {
   flex-wrap: wrap;
   list-style-type: none;
   margin-left: 105px;
+  grid-template-rows: min-content;
   /*padding-left: 80px;*/
   /*margin-right: 50px;*/
 }
@@ -1076,9 +1080,9 @@ input:hover {
   padding: 0;
 }
 
-.footer-info-item-second {
+/*.footer-info-item-second {
   margin-top: -9px;
-}
+}*/
 
 .heart {
   position: relative;
