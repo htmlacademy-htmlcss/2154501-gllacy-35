@@ -216,8 +216,41 @@
   border-radius: 50%;
 }
 
+.active-point:focus {
+  outline: none;
+}
+
 .no-active-point {
   opacity: 0.3;
+  cursor: pointer;
+}
+
+.no-active-point:hover {
+  opacity: 1;
+  background-color: rgba(252, 252, 252, 0.3);
+  cursor: pointer;
+  box-shadow: inset 0 0 0 1px #fcfcfc;
+}
+
+.no-active-point:focus {
+  opacity: 1;
+  background-color: #fcfcfc;
+  cursor: pointer;
+  /*box-shadow: inset 0 0 0 1px #fcfcfc;*/
+  outline: none;
+}
+
+.no-active-point:active {
+  opacity: 0.5;
+  background-color: #fcfcfc;
+  cursor: pointer;
+}
+
+.no-active-point:disabled {
+  opacity: 1;
+  background-color: rgba(252, 252, 252, 0.3);
+  cursor: pointer;
+  box-shadow: inset 0 0 0 1px #2D3440;
 }
 
 .social-list {
