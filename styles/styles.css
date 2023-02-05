@@ -1315,8 +1315,35 @@ input:disabled {
   margin-left: -4px;
   background-color: #fcfcfc;
   color: #2D3440;
+  /*border: none;*/
   border: 4px solid rgba(252, 252, 252, 0.4);
+  /*box-shadow: 0 0 0 4px rgba(252, 252, 252, 0.4);*/
   padding-left: 33px;
+}
+
+.btn-slider:hover,
+.btn-free:hover {
+  background-color: rgba(252, 252, 252, 0.4);
+  border: 4px solid #FCFCFC;
+  /*border: none;*/
+  box-shadow: 0 4px 15px rgba(133, 133, 133, 0.15);
+  /*outline: 4px solid red;*/
+}
+
+.btn-slider:focus,
+.btn-free:focus {
+  background: rgba(252, 252, 252, 0.5);
+  /*border: 4px solid red;*/
+  box-shadow: 0 0 0 2px #2D3440, 0 4px 12px rgba(45, 52, 64, 0.1);
+  outline: none;
+}
+
+.btn-slider:active,
+.btn-free:active {
+  background: #FCFCFC;
+  border: 2px solid #2D3440, 2px solid blue;
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  outline: none;
 }
 
 .circle-purple {
