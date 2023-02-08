@@ -394,12 +394,17 @@ body {
   padding: 0;
   text-align: center;
   max-width: 270px;
+  height: 100%;
 }
 
 .item-wrap-content {
   background-color: #ffffff;
   padding: 133px 40px 24px;
   border-radius: 8px;
+  height: calc(100% - 51px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 .item-basket {
@@ -447,7 +452,7 @@ body {
 
 
 .item-info {
-  margin: 0;
+  margin: auto 0 0;
   padding: 0;
   display: flex;
   justify-content: space-between;
@@ -549,7 +554,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 270px);
   gap: 30px;
-  align-items: center;
+  align-items: start;
   justify-content: center;
 }
 
@@ -1367,6 +1372,7 @@ input:disabled {
 
 .user-popup {
   position: relative;
+  border-radius: 27px;
 }
 
 .user-popup::before {
