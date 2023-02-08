@@ -137,6 +137,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 80px;
+  position: relative;
 }
 
 .tel-link {
@@ -1641,7 +1642,7 @@ input:disabled {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  top: 362px;
+  top: 237px;
   left: calc(50% - 43px);
   outline: none;
 }
