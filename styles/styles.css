@@ -1958,6 +1958,7 @@ input:disabled {
   box-sizing: border-box;
   padding: 8px 24px;
   justify-content: space-between;
+  padding-bottom: 2px;
 }
 
 .extender-item {
@@ -1965,6 +1966,16 @@ input:disabled {
   line-height: 20px;
   display: flex;
   align-items: center;
+  padding-left: 24px;
+
+}
+
+.extender-item label {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  padding-top: 2px;
+  padding-bottom: 0;
 }
 
 .extender-input {
@@ -2204,10 +2215,10 @@ input:disabled {
   border: 2px solid #FCFCFC;
   border-radius: 20px;
   text-align: center;
-  align-self: baseline;
   word-break: break-all;
   position: relative;
   cursor: pointer;
+  align-self: flex-end;
 }
 
 .btn-grey:hover {
