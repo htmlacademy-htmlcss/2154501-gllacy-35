@@ -101,9 +101,9 @@
       <h2 class="visually-hidden">Выбор продукта</h2>
 
       <form class="inner-header-filter" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="inner-header-filter-group">
-          <legend class="inner-header-filter-title">Сортировка:</legend>
-          <select class="inner-header-sorting-select">
+        <fieldset class="filter-group">
+          <legend class="filter-title">Сортировка:</legend>
+          <select class="sorting-select">
             <option>по популярности</option>
             <option>сначала недорогие</option>
             <option>сначала дорогие</option>
@@ -111,8 +111,8 @@
           </select>
         </fieldset>
 
-        <fieldset class="inner-header-filter-group">
-          <legend class="inner-header-filter-title">Цена: 100 ₽ – 500 ₽</legend>
+        <fieldset class="filter-group">
+          <legend class="filter-title">Цена: 100 ₽ – 500 ₽</legend>
           <div class="range-background">
             <div class="range-scale">
               <div class="range-bar">
@@ -127,50 +127,50 @@
           </div>
         </fieldset>
 
-        <fieldset class="inner-header-filter-group">
-          <legend class="inner-header-filter-title">Жирность:</legend>
-          <ul class="richness-list">
-            <li class="richness-item">
+        <fieldset class="filter-group">
+          <legend class="filter-title">Жирность:</legend>
+          <ul class="radio-list">
+            <li class="radio-item">
               <input class="radio-input visually-hidden" type="radio" id="0" name="richness">
               <label class="radio-label" for="0">0%</label>
             </li>
-            <li class="richness-item">
+            <li class="radio-item">
               <input class="radio-input visually-hidden" type="radio" id="10"  name="richness" checked>
               <label class="radio-label" for="10">до 10%</label>
             </li>
-            <li class="richness-item">
+            <li class="radio-item">
               <input class="radio-input visually-hidden" type="radio" id="30"  name="richness">
               <label class="radio-label" for="30">до 30%</label>
             </li>
-            <li class="richness-item">
+            <li class="radio-item">
               <input class="radio-input visually-hidden" type="radio" id="30+"  name="richness">
               <label class="radio-label" for="30+">выше 30%</label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="inner-header-filter-group">
-          <legend class="inner-header-filter-title">Наполнители:</legend>
-          <ul class="extender-list">
-            <li class="extender-item">
-              <input class="extender-input visually-hidden" type="checkbox" id="choco" name="choco" checked>
-              <label class="extender-label" for="choco">шоколадные</label>
+        <fieldset class="filter-group">
+          <legend class="filter-title">Наполнители:</legend>
+          <ul class="checkbox-list">
+            <li class="checkbox-item">
+              <input class="checkbox-input visually-hidden" type="checkbox" id="choco" name="choco" checked>
+              <label class="checkbox-label" for="choco">шоколадные</label>
             </li>
-            <li class="extender-item">
-              <input class="extender-input visually-hidden" type="checkbox" id="sugar" name="sugar" checked>
-              <label class="extender-label" for="sugar">сахарные посыпки</label>
+            <li class="checkbox-item">
+              <input class="checkbox-input visually-hidden" type="checkbox" id="sugar" name="sugar" checked>
+              <label class="checkbox-label" for="sugar">сахарные посыпки</label>
             </li>
-            <li class="extender-item">
-              <input class="extender-input visually-hidden" type="checkbox" id="fruit" name="fruit">
-              <label class="extender-label" for="fruit">фрукты</label>
+            <li class="checkbox-item">
+              <input class="checkbox-input visually-hidden" type="checkbox" id="fruit" name="fruit">
+              <label class="checkbox-label" for="fruit">фрукты</label>
             </li>
-            <li class="extender-item">
-              <input class="extender-input visually-hidden" type="checkbox" id="sirup" name="sirup">
-              <label class="extender-label" for="sirup">сиропы</label>
+            <li class="checkbox-item">
+              <input class="checkbox-input visually-hidden" type="checkbox" id="sirup" name="sirup">
+              <label class="checkbox-label" for="sirup">сиропы</label>
             </li>
-            <li class="extender-item">
-              <input class="extender-input visually-hidden" type="checkbox" id="jam" name="jam">
-              <label class="extender-label" for="jam">джемы</label>
+            <li class="checkbox-item">
+              <input class="checkbox-input visually-hidden" type="checkbox" id="jam" name="jam">
+              <label class="checkbox-label" for="jam">джемы</label>
             </li>
           </ul>
         </fieldset>
