@@ -138,7 +138,7 @@
   width: 1170px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 80px;
+  margin-bottom: 81px;
   position: relative;
 }
 
@@ -171,6 +171,7 @@
   display: none;
   flex-direction: row;
   margin-left: 70px;
+  margin-top: 2px;
 }
 
 .active-slide {
@@ -329,7 +330,7 @@
   line-height: 46px;
   color: #2D3440;
   text-align: center;
-  margin-bottom: 55px;
+  margin-bottom: 54px;
 }
 
 .index-banner-title-mini {
@@ -424,32 +425,53 @@ body {
   appearance: none;
 }
 
+.item-basket::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  mask-image: url("../images/union.svg");
+  -webkit-mask-image: url("../images/union.svg");
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+  background-color: #FCFCFC;
+}
+
 .item-basket:hover{
   background-color: #FCFCFC;
 }
 
-.item-basket:hover path{
-  fill: #2D3440;
+.item-basket:hover:before {
+  background-color: #2D3440;
 }
 
-.item-basket:active{
-  background-color: #FFCBD8;
-}
-
-.item-basket:active path{
-  fill: #2D3440;
-}
-
-.item-basket:focus{
+.item-basket:focus {
   border-color: #2D3440;
+  background-color: #FF2F64;
+}
+
+.item-basket:focus:before {
+  background-color: #FCFCFC;
+}
+
+.item-basket:active {
+  background-color: #FFCBD8;
+  border-color: #FF2F64;
+}
+
+.item-basket:active:before {
+  background-color: #2D3440;
 }
 
 .item-basket:disabled{
-  background-color:#B9B9B9 ;
+  background-color:#B9B9B9;
+  border-color: #B9B9B9;
 }
 
-.item-basket:disabled path{
-  fill: #565C66;
+.item-basket:disabled:before {
+  background-color: #565C66;
 }
 
 
