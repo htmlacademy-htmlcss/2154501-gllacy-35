@@ -1989,19 +1989,64 @@ input:disabled {
   display: flex;
   align-items: center;
   padding-left: 24px;
-
+  margin-right: 17px;
 }
 
-.extender-item label {
+.extender-item:last-child {
+  padding-left: 23px;
+  margin-right: 2px;
+}
+
+.extender-label {
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   padding-top: 2px;
   padding-bottom: 0;
+  display: block;
+  position: relative;
+  cursor: pointer;
 }
 
-.extender-input {
-  display: none;
+.extender-label::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  top: 4px;
+  left: -24px;
+  mask-image: url("../images/unchecked.svg");
+  -webkit-mask-image: url("../images/unchecked.svg");
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+  background-color: #2D3440;
+}
+
+.extender-input[type="checkbox"]:checked + .extender-label::before {
+  mask-image: url("../images/checked.svg");
+  -webkit-mask-image: url("../images/checked.svg");
+}
+
+.extender-label:hover:before {
+  background-color: #fcfcfc;
+}
+
+.extender-item:focus-within .extender-label::before {
+  background-color: #fcfcfc;
+  opacity: 0.5;
+}
+
+.extender-label:active:before {
+  background-color: #fcfcfc;
+  opacity: 0.3;
+}
+
+.extender-label:disabled:before {
+  background-color: #2D3440;
+  opacity: 0.5;
 }
 
 .inner-header-sorting-select {
@@ -2224,6 +2269,7 @@ input:disabled {
 
 .btn-grey {
   margin: 0;
+  margin-left: -9px;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -2233,7 +2279,7 @@ input:disabled {
   background-color: rgba(252, 252, 252, 0.3);
   background-clip: padding-box;
   appearance: none;
-  padding: 8px 32px;
+  padding: 8px 52px;
   border: 2px solid #FCFCFC;
   border-radius: 20px;
   text-align: center;
