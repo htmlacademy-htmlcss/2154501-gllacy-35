@@ -2161,15 +2161,16 @@ body {
 
 .after-catalog {
   display: grid;
-  grid-template-columns: 400px 200px 400px;
-  justify-content: space-between;
+  grid-template-columns: 1fr 350px 1fr;
+  gap: 20px;
   margin-bottom: 76px;
   margin-top: 53px;
 }
 
 .view-more {
   grid-column: 2/3;
-  margin-left: 0;
+  margin: 0 auto;
+  margin-left: 75px;
 }
 
 .catalog-pagination-button-back {
