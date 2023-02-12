@@ -2174,8 +2174,9 @@ body {
 }
 
 .catalog-pagination-button-back {
-  width: 24px;
-  height: 24px;
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
   background-image: url("../images/arrow-left.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -2202,8 +2203,9 @@ body {
 }
 
 .catalog-pagination-button-next {
-  width: 24px;
-  height: 24px;
+  width: 14px;
+  height: 14px;
+  margin-left: 8px;
   background-image: url("../images/arrow-right.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -2243,8 +2245,11 @@ body {
 }
 
 .catalog-pagination-number {
-  width: 24px;
-  height: 24px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  width: 22px;
+  height: 22px;
   display: flex;
   justify-content: center;
   align-items: center;
