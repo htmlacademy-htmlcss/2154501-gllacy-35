@@ -2418,3 +2418,7 @@ body {
 .btn-feedback {
   margin-right: -6px;
 }
+
+.modal-container-close {
+  display: none;
+}
