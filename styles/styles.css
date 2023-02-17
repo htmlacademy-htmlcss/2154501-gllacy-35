@@ -1596,6 +1596,65 @@ body {
   box-sizing: border-box;
 }
 
+.user-search-mask{
+  width: 16px;
+  height: 16px;
+  mask-image: url("../images/search-icon.svg");
+  -webkit-mask-image: url("../images/search-icon.svg");
+  background-color: #2D3440;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+}
+
+.user-popup:focus-within .user-search-mask{
+  background-color: #FCFCFC;
+}
+
+.user-item-search {
+  position: relative;
+}
+
+.user-item-search:focus-within .user-popup {
+  background-color: #FF4A78;
+}
+
+.user-item-search:focus-within .user-search-mask {
+  background-color: #fcfcfc;
+}
+
+.user-search{
+  padding: 6px;
+  width: 32px;
+  height: 32px;
+}
+.user-search:focus-within ~ .popup-search{
+  display: block;
+}
+.user-item-search:focus-within > .popup-search{
+  display: block;
+}
+
+.popup-search {
+  width: 356px;
+  min-height: 96px;
+  position: absolute;
+  border-radius: 4px;
+  background-color: #FCFCFC;
+  padding: 24px 16px;
+  box-sizing: border-box;
+  z-index: 1;
+  right: 0;
+  top: 40px;
+  display: none;
+  filter: drop-shadow(0 8px 16px rgba(45, 52, 64, 0.12));
+}
+
+.popup-search-form input {
+width: 100%;
+}
+
 .user-popup {
   position: relative;
   border-radius: 27px;
