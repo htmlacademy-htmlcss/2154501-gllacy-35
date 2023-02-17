@@ -107,11 +107,12 @@
 }
 
 .nav-catalog {
-  padding: 8px 38px 8px 16px;
+  padding: 8px 16px 8px 16px;
   position: relative;
+  display: flex;
 }
 
-.nav-catalog::after {
+/*.nav-catalog::after {
   position: absolute;
   content: "";
   left: 85px;
@@ -121,6 +122,128 @@
   background-image: url("../images/catalog-button.svg");
   background-repeat: no-repeat;
   background-position: center;
+}*/
+
+.drop-arrow {
+  content: "";
+  display: block;
+  left: 85px;
+  top: 11px;
+  width: 16px;
+  height: 16px;
+  margin-left: 7px;
+  margin-top: 3px;
+  mask-image: url("../images/catalog-button.svg");
+  -webkit-mask-image: url("../images/catalog-button.svg");
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+  background-color: #2D3440;
+  transition: transform 0.5s ease-in-out;
+}
+
+.drop-list {
+  display: none;
+}
+
+.drop:focus-within {
+  background-color: #FF4A78;
+  color: #E7E7E7;
+  /*border: 2px solid transparent;*/
+}
+
+.drop:focus-within .drop-arrow {
+  background-color: #E7E7E7 ;
+  transform: rotate(0.5turn);
+}
+
+.drop:focus-within ~ .drop-list {
+  display: flex;
+}
+
+.navigation-item-drop:focus-within > .drop-list {
+  display: flex;
+}
+
+.navigation-item-drop:focus-within > .drop {
+  background-color: #FF4A78;
+}
+
+.navigation-item-drop {
+  position: relative;
+}
+
+.drop-list {
+  margin: 0;
+  padding: 8px 0;
+  list-style-type: none;
+  flex-direction: column;
+  width: 135px;
+  min-height: 170px;
+  position: absolute;
+  border-radius: 4px;
+  background-color: #FCFCFC;
+  z-index: 1;
+  left: 1px;
+  top: 44px;
+  display: none;
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
+  box-sizing: border-box;
+}
+
+.drop-list .drop-link {
+  margin: 0;
+  display: block;
+  padding: 6px 16px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.drop-item {
+  margin: 0;
+  padding: 0;
+}
+
+.drop-item:first-child .drop-link {
+  padding: 8px 16px;
+  font-weight: 700;
+}
+
+.drop-item:first-child {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.drop-link {
+  outline: none;
+}
+
+.drop-item:first-child::after {
+  content: " ";
+  position: absolute;
+  width: 103px;
+  height: 1px;
+  background-color: #B9B9B9;
+  bottom: -4px;
+  left: 16px;
+}
+
+.drop-link:hover {
+  background-color:#FFCBD8 ;
+}
+
+.drop-link:active {
+  background-color: #FF7799;
+}
+
+.drop-link:focus {
+  background-color: #FF4A78;
+  color: #FCFCFC;
 }
 
 .nav-delivery-pay {
