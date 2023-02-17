@@ -64,20 +64,23 @@
               </form>
             </div>
           </li>
-          <li class="navigation-user-item">
+          <li class="navigation-user-item user-item-login">
             <button type="button" class="user-login  user-popup">
-              <svg
-                width="14"
-                height="15"
-                viewBox="0 0 14 15"
-                focusable="false"
-                aria-hidden="true"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.5c0-.3.3-.6.7-.6h2.6a2 2 0 0 1 2 2v9.3a2 2 0 0 1-2 2H8.7a.7.7 0 0 1 0-1.3h2.6a.7.7 0 0 0 .7-.7V2.9a.7.7 0 0 0-.7-.7H8.7a.7.7 0 0 1-.7-.7ZM4.9 3.7c.2-.2.6-.2.9 0L9.1 7a.7.7 0 0 1 .2.5.7.7 0 0 1-.2.5l-3.3 3.3a.7.7 0 1 1-1-1l2.3-2.1H.7a.7.7 0 1 1 0-1.3H7L4.9 4.7a.7.7 0 0 1 0-1Z" fill="#2D3440"/>
-              </svg>
+              <span class="user-login-mask"></span>
               <span>Вход</span>
             </button>
+            <div class="popup-login">
+              <h3 class="popup-title">Личный кабинет</h3>
+              <form class="popup-login-form" action="https://echo.htmlacademy.ru/" method="post">
+                <input class="input-delivery index-input" type="email"  placeholder="email@example.com" required>
+                <input class="input-delivery index-input password-input" type="password"   required>
+                <button class="popup-login-submit red-button" type="submit">Войти</button>
+                <div class="popup-login-helper">
+                  <a class="password-helper" href="#">Забыли пароль?</a>
+                  <a class="registration-helper" href="#">Регистрация</a>
+                </div>
+             </form>
+            </div>
           </li>
           <li class="navigation-user-item">
             <button type="button" class="user-basket  user-popup">
