@@ -237,13 +237,13 @@
   background-color:#FFCBD8 ;
 }
 
-.drop-link:active {
-  background-color: #FF7799;
-}
-
 .drop-link:focus {
   background-color: #FF4A78;
   color: #FCFCFC;
+}
+
+.drop-link:active {
+  background-color: #FF7799;
 }
 
 .nav-delivery-pay {
@@ -1226,7 +1226,7 @@ body {
   background-position: center;
 }
 
-.icon-for-label-adress::after {
+/*.icon-for-label-adress::after {
   position: absolute;
   content: "";
   left: 56px;
@@ -1236,6 +1236,75 @@ body {
   background-image: url("../images/info-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
+}*/
+
+.label-wrap {
+  display: flex;
+}
+
+.tooltip {
+  width: 14px;
+  height: 14px;
+  top: -8px;
+  left: 5px;
+  background-image: url("../images/info-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  border: none;
+  background-color: transparent;
+}
+
+
+
+.label-wrap:focus-within ~ .tooltip-text,
+.label-wrap:hover ~ .tooltip-text {
+  display: block;
+}
+
+.tooltip-wrap {
+  position: relative;
+}
+
+.label-wrap:focus-within ~ .tooltip-decor,
+.label-wrap:hover ~ .tooltip-decor {
+  display: inline;
+}
+
+.tooltip-text {
+  position: absolute;
+  border: 1px solid #B9B9B9;
+  box-sizing: border-box;
+  padding: 10px 8px;
+  color: #565C66;
+  background-color: #FCFCFC;
+  font-size: 12px;
+  line-height: 16px;
+  width: 165px;
+  top: -20px;
+  left: 27px;
+  border-radius: 2px;
+  box-shadow: 0 2px 12px rgba(173, 152, 143, 0.18);
+  font-weight: 400;
+  display: none;
+}
+
+.tooltip-decor {
+  content: " ";
+  position: absolute;
+  bottom:-10px;
+  width:7px;
+  height:7px;
+  border-left: 1px solid transparent;
+  border-right: 1px solid #B9B9B9;
+  border-top: 1px solid #B9B9B9;
+  background-color: #FCFCFC;
+  transform: rotateZ(227deg);
+  top: 6px;
+  left: 23px;
+  z-index: 2;
+  display: none;
 }
 
 .index-about-us {
@@ -2041,7 +2110,7 @@ width: 100%;
   right: 0;
   top: 40px;
   display: none;
-  box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
 }
 .popup-basket-empty-title {
   font-weight: 700;
@@ -2638,13 +2707,14 @@ width: 100%;
    background-color: #2D3440;
  }
 
+ .range-toggle:focus {
+  border: 6px solid #FCFCFC;
+  background-color: #2D3440;
+  outline: 2px solid #2D3440;
+}
+
  .range-toggle:active {
    border: 6px solid #2D3440;
-   background-color: #2D3440;
- }
-
- .range-toggle:focus {
-   border: 6px solid #FCFCFC;
    background-color: #2D3440;
  }
 

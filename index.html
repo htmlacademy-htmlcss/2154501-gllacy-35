@@ -356,18 +356,27 @@
             <p class="delivery-form-title">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
             <form class="delivery-form-group" action="https://echo.htmlacademy.ru/" method="post">
               <div class="input-fields-delivery">
-                <p class="input-fields-and-label">
+                <div class="input-fields-and-label">
                   <label class="icon-for-label index-label" for="data">Дата</label>
                   <input class="input-delivery index-input" id="data" type="text" name="data" placeholder="01.04.2020">
-                </p>
-                <p class="input-fields-and-label">
+                </div>
+                <div class="input-fields-and-label">
                   <label class="index-label" for="tel">Телефон</label>
                   <input class="input-delivery index-input" id="tel" type="text" name="tel" placeholder="+7 800 999-00-00">
-                </p>
-                <p class="input-fields-and-label adress-input">
-                  <label class="icon-for-label-adress index-label" for="adress">Адрес</label>
+                </div>
+                <div class="input-fields-and-label adress-input">
+                  <div class="label-wrap">
+                    <label class="icon-for-label-adress index-label" for="adress">Адрес</label>
+                    <div class="tooltip-wrap">
+                      <button class="tooltip" type="button">
+                        <span class="visually-hidden">Дополнительная информация</span>
+                      </button>
+                      <p class="tooltip-text"> Введите название<br>улицы, дома и квартиры</p>
+                      <span class="tooltip-decor"></span>
+                    </div>
+                  </div>
                   <input class="input-delivery index-input" id="adress" type="text" name="adress" placeholder="ул. Большая Конюшенная, 19/8">
-                </p>
+                </div>
               </div>
               <button class="btn btn-delivery  btn-red" type="submit">Отправить</button>
             </form>
@@ -440,7 +449,7 @@
           <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="input-delivery index-input" id="name" type="text" name="name" placeholder="Имя и фамилия">
             <input class="input-delivery index-input" id="e-mail" type="text" name="e-mail" placeholder="email@example.com">
-            <textarea class="input-delivery index-input text-input" id="feedback-text" type="text" name="feedback-text" placeholder="В свободной форме"></textarea>
+            <textarea class="input-delivery index-input text-input" id="feedback-text" name="feedback-text" placeholder="В свободной форме"></textarea>
           </form>
           <button class="btn btn-delivery btn-red btn-feedback" type="submit">Отправить</button>
         </section>
