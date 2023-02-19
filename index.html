@@ -72,8 +72,8 @@
             <div class="popup-login">
               <h3 class="popup-title">Личный кабинет</h3>
               <form class="popup-login-form" action="https://echo.htmlacademy.ru/" method="post">
-                <input class="input-delivery index-input" type="email"  placeholder="email@example.com">
-                <input class="input-delivery index-input password-input" type="password">
+                <input class="input-delivery index-input login-input" type="email"  placeholder="email@example.com">
+                <input class="input-delivery index-input password-input" type="password" placeholder="••••••">
                 <button class="btn btn-login btn-red" type="submit">Войти</button>
                 <div class="popup-login-helper">
                   <a class="password-helper login-href" href="#">Забыли пароль?</a>
@@ -357,13 +357,24 @@
             <form class="delivery-form-group" action="https://echo.htmlacademy.ru/" method="post">
               <div class="input-fields-delivery">
                 <div class="input-fields-and-label">
-                  <label class="icon-for-label index-label" for="data">Дата</label>
+                  <div class="label-wrap">
+                    <label class="index-label" for="data">Дата</label>
+                    <div class="tooltip-wrap">
+                      <button class="tooltip" type="button">
+                        <span class="visually-hidden">Дополнительная информация</span>
+                      </button>
+                      <p class="tooltip-text"> Введите дату в формате 31.12.22</p>
+                      <span class="tooltip-decor"></span>
+                    </div>
+                  </div>
                   <input class="input-delivery index-input" id="data" type="text" name="data" placeholder="01.04.2020">
                 </div>
+
                 <div class="input-fields-and-label">
                   <label class="index-label" for="tel">Телефон</label>
                   <input class="input-delivery index-input" id="tel" type="text" name="tel" placeholder="+7 800 999-00-00">
                 </div>
+
                 <div class="input-fields-and-label adress-input">
                   <div class="label-wrap">
                     <label class="icon-for-label-adress index-label" for="adress">Адрес</label>
