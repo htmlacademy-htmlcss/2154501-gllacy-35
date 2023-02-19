@@ -67,7 +67,7 @@
           <li class="navigation-user-item user-item-login">
             <button type="button" class="user-login  user-popup">
               <span class="user-login-mask"></span>
-              <span>Вход</span>
+              <span class="login-mask-text">Вход</span>
             </button>
             <div class="popup-login">
               <h3 class="popup-title">Личный кабинет</h3>
@@ -82,21 +82,46 @@
              </form>
             </div>
           </li>
-          <li class="navigation-user-item">
-            <button type="button" class="user-basket  user-popup">
+          <li class="navigation-user-item user-item-basket">
+            <button type="button" class="user-basket user-popup">
               <span class="visually-hidden">Количество товаров в корзине</span>
-              <svg
-                width="16"
-                height="17"
-                viewBox="0 0 16 17"
-                focusable="false"
-                aria-hidden="true"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.2 2.1a.7.7 0 0 0 0 1.3h1.7l.5 2.4 1 4.9A1.8 1.8 0 0 0 6.2 12h5.6a1.8 1.8 0 0 0 1.8-1.4l1-4.9a.7.7 0 0 0-.7-.8H4.6l-.5-2.4c0-.3-.3-.5-.6-.5H1.2Zm4.5 8.3-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" fill="#2D3440"/>
-              </svg>
-              <span>2 товара</span>
+              <span class="basket-mask"></span>
+              <span class="basket-mask-text">2 товара</span>
             </button>
+            <div class="popup-basket">
+              <h3 class="popup-title">Корзина</h3>
+              <ul class="popup-basket-list">
+                <li class="popup-basket-item">
+                  <img src="images/raspberry-icon.png" width="46" height="46" alt="Малинка" >
+                  <div class="popup-basket-about-product">
+                  <h4 class="popup-basket-subtitle">Малинка</h4>
+                  <span class="popup-basket-description">1 кг х 310 ₽</span>
+                  </div>
+                  <span class="popup-basket-price">310 ₽</span>
+                  <button class="popup-basket-delete">
+                    <span class="visually-hidden">Удалить</span>
+                  </button>
+                </li>
+                <li class="popup-basket-item">
+                  <img src="images/bubble-icon.png" width="46" height="46" alt="Бабл-гам" >
+                  <div class="popup-basket-about-product">
+                  <h4 class="popup-basket-subtitle">Бабл-гам</h4>
+                  <span class="popup-basket-description">1,5 кг х 320 ₽</span>
+                  </div>
+                  <span class="popup-basket-price">480 ₽</span>
+                  <button class="popup-basket-delete">
+                    <span class="visually-hidden">Удалить</span>
+                  </button>
+                </li>
+              </ul>
+              <div class="popup-basket-after">
+              <button class="btn popup-basket-button btn-red">Оформить заказ</button>
+              <p class="popup-basket-total-sum">Итого: 790 ₽</p>
+              </div>
+            </div>
+            <div class="popup-basket-empty">
+              <h3 class="popup-basket-empty-title">Ваша корзина пока пуста</h3>
+            </div>
           </li>
         </ul>
       </nav>
