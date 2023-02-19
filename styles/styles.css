@@ -1918,16 +1918,10 @@ width: 100%;
 
 .popup-login-form .password-input {
   margin-bottom: 28px;
-  font-family: 'pass', sans-serif;
-  /*font-size: 30px;*/
-  /*padding: 0 .75rem;
-  height: 50px;
-  line-height: 50px;
-  display: block;*/
-  box-sizing: border-box;
 }
 
-.login-input::-webkit-input-placeholder {
+.login-input,
+.password-input {
   color: #2D3440;
 }
 
