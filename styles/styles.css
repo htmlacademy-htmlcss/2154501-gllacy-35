@@ -1033,10 +1033,9 @@ body {
 
 .delivery-wrap {
   margin: 0;
-  padding: 100px 50px 100px 100px;
-  /*margin-top: 167px;
+  padding: 0 50px 0 100px;
+  margin-top: auto;
   margin-left: 100px;
-  padding-right: 50px;*/
 }
 
 .delivery-form {
@@ -2466,7 +2465,7 @@ width: 100%;
 
 .breadcrumbs {
   flex-grow: 1;
-  margin-top: 49px;
+  margin-top: 47px;
   margin-bottom: 0;
 }
 
@@ -2529,6 +2528,7 @@ width: 100%;
   line-height: 46px;
   margin: 0;
   margin-left: 0.5px;
+  margin-bottom: 2px;
 }
 
 .container {
