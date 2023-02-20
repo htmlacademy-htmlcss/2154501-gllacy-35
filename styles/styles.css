@@ -576,6 +576,7 @@ body {
   justify-content: center;
   align-items: center;
   appearance: none;
+  margin-left: auto;
 }
 
 .item-basket::before {
@@ -634,6 +635,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .item-title {
@@ -668,6 +671,9 @@ body {
   font-size: 20px;
   line-height: 24px;
   color: #2D3440;
+  margin-right: 10px;
+  word-wrap: break-word;
+  max-width: 70%;
 }
 
 .index-banner-wrapper {
@@ -685,8 +691,8 @@ body {
   min-height: 200px;
   background-color: #FF7799;
   background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
+  background-position: bottom right;
+  /*background-size: cover;*/
   border: none;
   border-radius: 16px;
   padding-top: 36px;
