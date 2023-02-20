@@ -50,7 +50,9 @@
   list-style: none;
   justify-content: center;
   align-items: center;
+  max-width: 460px;
 }
+
 .main-navigation {
   margin: 0;
   padding: 0;
@@ -59,8 +61,8 @@
   justify-content: space-between;
   /*width: 100%;*/
   min-width: 1016.5px;
-  align-items: baseline;
-  flex-wrap: wrap;
+  /*align-items: baseline;*/
+  flex-wrap: nowrap;
   align-content: center;
   margin-top: -5px;
 }
@@ -70,6 +72,10 @@
   padding: 0;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 480px;
+  gap: 16px 0;
+  justify-content: flex-start;
 }
 
 .navigation-user {
@@ -78,6 +84,9 @@
   display: flex;
   flex-direction: row;
   gap: 16px;
+  flex-wrap: wrap;
+  max-width: 460px;
+  justify-content: flex-end;
 }
 
 .navigation-link {
