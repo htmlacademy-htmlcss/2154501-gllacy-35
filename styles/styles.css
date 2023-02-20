@@ -375,15 +375,16 @@
 
 .no-active-point:focus {
   opacity: 1;
-  background-color: #fcfcfc;
+  background-color:     rgba(252, 252, 252, 0.3);
   cursor: pointer;
-  /*box-shadow: inset 0 0 0 1px #fcfcfc;*/
+  box-shadow: inset 0 0 0 1px #2D3440;
   outline: none;
 }
 
 .no-active-point:active {
   opacity: 0.5;
   background-color: #fcfcfc;
+  box-shadow: none;
   cursor: pointer;
 }
 
@@ -1902,14 +1903,7 @@ width: 100%;
   flex-wrap: wrap;
 }
 
-.popup-title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
-  margin: 0;
-  margin-bottom: 31px;
-  margin-left: -0.5px;
-}
+
 
 .popup-login-form input {
   width: 100%;
@@ -2009,11 +2003,12 @@ width: 100%;
 }
 
 .popup-title {
+  margin-left: -0.5px;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .popup-basket-list {
@@ -2022,7 +2017,7 @@ width: 100%;
   margin: 0;
   padding: 0;
   list-style-type: none;
-  margin-bottom: 58px;
+  margin-bottom: 60px;
   position: relative;
 }
 
@@ -2032,13 +2027,13 @@ width: 100%;
  width: 345px;
  height: 1px;
  background-color: #E7E7E7;
- bottom: -30px;
+ bottom: -32px;
 }
 
 .popup-basket-item {
   display: grid;
-  margin-bottom: 21px;
-  grid-template-columns: 62px 164px 103px 20px;
+  margin-bottom: 20px;
+  grid-template-columns: 226px 103px 20px;
   align-items: center;
 }
 
@@ -2046,7 +2041,21 @@ width: 100%;
   margin-bottom: 0;
 }
 
+.popup-link {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #2D3440;
+  display: flex;
+}
+
+.popup-img {
+  margin-right: 16px;
+  margin-top: 4px;
+}
+
 .popup-basket-about-product {
+  margin-top: 0;
   display: flex;
   flex-direction: column;
 }
@@ -2055,8 +2064,8 @@ width: 100%;
   font-weight: 700;
   font-size: 18px;
   margin: 0;
-  margin-bottom: 4px;
-  margin-top: 1px;
+  margin-bottom: 2px;
+  margin-top: 4px;
 }
 
 .popup-basket-description {
@@ -2068,10 +2077,11 @@ width: 100%;
 .popup-basket-price {
   font-weight: 700;
   font-size: 18px;
-  margin-top: 1px;
+  margin-top: 6px;
 }
 
 .popup-basket-delete {
+  margin-top: 5px;
   width: 16px;
   height: 16px;
   border: 1px solid transparent;
@@ -2112,6 +2122,7 @@ width: 100%;
   margin: 0;
   padding: 0;
   padding-top: 5px;
+  margin-right: -0.5px;
 }
 
 .popup-basket-empty {
