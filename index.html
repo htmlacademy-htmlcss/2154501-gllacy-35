@@ -21,7 +21,7 @@
 
         <ul class="main-navigation-list">
           <li class="main-navigation-item navigation-item-drop">
-            <button class="navigation-link nav-catalog user-popup drop">
+            <button class="navigation-link nav-catalog user-popup drop" type="button">
              Каталог
              <span class="drop-arrow"></span>
            </button>
@@ -63,7 +63,7 @@
             </button>
             <div class="popup-search">
               <form class="popup-search-form" action="https://echo.htmlacademy.ru/" method="post">
-                <input type="search" class="input-delivery index-input" placeholder="Поиск по сайту">
+                <input type="search" class="input-delivery index-input" placeholder="Поиск по сайту" required>
               </form>
             </div>
           </li>
@@ -75,8 +75,8 @@
             <div class="popup-login">
               <h3 class="popup-title-lk">Личный кабинет</h3>
               <form class="popup-login-form" action="https://echo.htmlacademy.ru/" method="post">
-                <input class="input-delivery index-input login-input" type="email"  value="email@example.com">
-                <input class="input-delivery index-input password-input" type="password" value="••••••">
+                <input class="input-delivery index-input login-input" type="email"  value="email@example.com" required>
+                <input class="input-delivery index-input password-input" type="password" value="••••••" required>
                 <button class="btn btn-login btn-red" type="submit">Войти</button>
                 <div class="popup-login-helper">
                   <a class="password-helper login-href" href="#">Забыли пароль?</a>
@@ -103,7 +103,7 @@
                     </div>
                   </a>
                   <span class="popup-basket-price">310 ₽</span>
-                  <button class="popup-basket-delete">
+                  <button class="popup-basket-delete" type="button">
                     <span class="visually-hidden">Удалить</span>
                   </button>
                 </li>
@@ -116,13 +116,13 @@
                     </div>
                   </a>
                   <span class="popup-basket-price">480 ₽</span>
-                  <button class="popup-basket-delete">
+                  <button class="popup-basket-delete" type="button">
                     <span class="visually-hidden">Удалить</span>
                   </button>
                 </li>
               </ul>
               <div class="popup-basket-after">
-              <button class="btn popup-basket-button btn-red">Оформить заказ</button>
+              <button class="btn popup-basket-button btn-red" type="submit">Оформить заказ</button>
               <p class="popup-basket-total-sum">Итого: 790 ₽</p>
               </div>
             </div>
@@ -203,17 +203,17 @@
           <div class="after-slider">
             <ol class="slide-point-list">
               <li class="slide-point-item">
-                <button class="point-button active-point">
+                <button class="point-button active-point" type="button">
                   <span class="visually-hidden">Нежный пломбир с клубничным джемом</span>
                 </button>
               </li>
               <li class="slide-point-item">
-                <button class="point-button no-active-point">
+                <button class="point-button no-active-point" type="button">
                   <span class="visually-hidden">Сливочное мороженое со вкусом банана</span>
                 </button>
               </li>
               <li class="slide-point-item">
-                <button class="point-button no-active-point">
+                <button class="point-button no-active-point" type="button">
                   <span class="visually-hidden">Карамельный пломбир с маршмеллоу</span>
                 </button>
               </li>
@@ -346,7 +346,7 @@
               <div class="wrap-newsletter-input">
                 <p class="newsletter-text">Подпишитесь на нашу сладкую рассылку и будете всегда в&nbsp;курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                 <form class="news-form" action="https://echo.htmlacademy.ru" method="post">
-                  <input class="input-field newsletter-input index-input" type="email" placeholder="email@example.com" name="email">
+                  <input class="input-field newsletter-input index-input" type="email" placeholder="email@example.com" name="email" required>
                   <button class="btn btn-newsletter btn-red" type="submit">Отправить</button>
                 </form>
               </div>
@@ -374,12 +374,12 @@
                       <span class="tooltip-decor"></span>
                     </div>
                   </div>
-                  <input class="input-delivery index-input" id="data" type="text" name="data" placeholder="01.04.2020">
+                  <input class="input-delivery index-input" id="data" type="text" name="data" placeholder="01.04.2020" required>
                 </div>
 
                 <div class="input-fields-and-label">
                   <label class="index-label" for="tel">Телефон</label>
-                  <input class="input-delivery index-input" id="tel" type="text" name="tel" placeholder="+7 800 999-00-00">
+                  <input class="input-delivery index-input" id="tel" type="text" name="tel" placeholder="+7 800 999-00-00" required>
                 </div>
 
                 <div class="input-fields-and-label adress-input">
@@ -393,7 +393,7 @@
                       <span class="tooltip-decor"></span>
                     </div>
                   </div>
-                  <input class="input-delivery index-input" id="adress" type="text" name="adress" placeholder="ул. Большая Конюшенная, 19/8">
+                  <input class="input-delivery index-input" id="adress" type="text" name="adress" placeholder="ул. Большая Конюшенная, 19/8" required>
                 </div>
               </div>
               <button class="btn btn-delivery  btn-red" type="submit">Отправить</button>
@@ -459,15 +459,15 @@
 
     <div class="modal-container modal-container-close">
       <div class="modal modal-feedback">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Мы обязательно ответим вам!</h2>
           <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="input-delivery index-input" id="name" type="text" name="name" placeholder="Имя и фамилия">
-            <input class="input-delivery index-input" id="e-mail" type="text" name="e-mail" placeholder="email@example.com">
-            <textarea class="input-delivery index-input text-input" id="feedback-text" name="feedback-text" placeholder="В свободной форме"></textarea>
+            <input class="input-delivery index-input" id="name" type="text" name="name" placeholder="Имя и фамилия" required>
+            <input class="input-delivery index-input" id="e-mail" type="text" name="e-mail" placeholder="email@example.com" required>
+            <textarea class="input-delivery index-input text-input" id="feedback-text" name="feedback-text" placeholder="В свободной форме" required></textarea>
             <button class="btn btn-delivery btn-red btn-feedback" type="submit">Отправить</button>
           </form>
         </section>
